@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list1</title>
+</head>
+<style>
+    .overlay{
+        border: 3px solid aqua; 
+        border-radius:5%; 
+        background:blue; 
+        width:300px; 
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    #span{
+        background:#d9d9d9;
+        cursor:pointer; 
+        margin-left:4px; 
+    }
+    #flex{float:left;}
+    .close{float:right;}
+    ul{
+        margin-right:40px;
+    }
+    ul li{
+        list-style-type:none;
+        cursor:pointer;
+        text-align:left;
+        font-size:18px;
+        width: 230px;
+    }
+    ul li:nth-child(even){
+        background-color: aqua;
+    }
+    ul li:nth-child(odd){
+        background-color: white;
+    }
+</style>
+<body>
+    <div class='overlay'>
+        <div >
+            <h2 style="text-transform:capitalize;">What are you up to?</h2>
+            <input type="text" id='text' placeholder="select yours" >
+            <span id='span'onclick="myAdd()">Add</span>
+        </div>
+        <ul id="taste">
+            <li>Would learn digital skills</li>
+            <li>Would implement codes</li>
+            <li>Would check on bootcamp</li>
+            <li>Would enrol for internship</li>
+            <li>Would get high-paying job</li>        
+        </ul>
+    </div> 
+    <script src="todo.js"></script>  
+</body>
+</html>
